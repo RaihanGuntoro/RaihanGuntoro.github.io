@@ -11,10 +11,10 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pd-10">
         <div class="container">
           <a class="navbar-brand" href="#">RA</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,23 +27,39 @@
         </div>
       </nav>
 
+    <!-- OffCanvas -->
+    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header bold">
+          <h5 class="fw-bold" id="offcanvasRightLabel">CV Raihan</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link black" href="#home1">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  <!-- Offcanvas -->
+
     <!-- Content -->
       <div class="bg-img">
           <img src="img/bg1.jpg" alt="" class="img-responsive bg-img">
       </div>
 
-      <div class="content">
-          <div class="container">
+      <div class="content" >
+          <div class="container" id="home1">
               <div class="row">
                 <div class="col-md-4">
                     <div class="card mt-card">
                         <div class="card-body">
                             <div class="profil-section">
                                 <div class="d-flex">
-                                    <img src="https://via.placeholder.com/150" alt="" class="img-responsive img-circle">
+                                    <img src="img/11.jpg" alt="" class="img-responsive img-circle">
                                     <div class="profil-info">
                                         <h4>Raihan Anugerah Guntoro</h4>
-                                        <p>Manusia Biasa</p>
+                                        <p> Student</p>
                                         <span><i class="fa-solid fa-location-dot"></i> Surakarta</span>
                                     </div>
                                 </div>
@@ -51,28 +67,44 @@
                             <hr>
                             <div class="about-section">
                                 <h5>About Me</h5>
-                                <p>Iam a human who make a new progress in my life</p>
+                                <p>A student interested in creativity, technology, event organizers, and self-development with 8 years experience in organizations.</p>
                             </div>
                             <div class="contact-section">
                                 <h5>Contact Me</h5>
-                                <p><i class="fa-solid fa-phone"></i> +62811 1111 1111</p>
-                                <p><i class="fa-solid fa-envelope"></i> raihan@gmail.com</p>
+                                <p><i class="fa-solid fa-phone"></i> +62821 9300 9367</p>
+                                <p><i class="fa-solid fa-envelope"></i> raihanguntoro22@gmail.com</p>
                                 <div class="social-media-section">
-                                   <a href="#" target="__blank"> <i class="fa-brands fa-facebook"></i></a>
-                                   <a href="#" target="__blank"> <i class="fa-brands fa-instagram"></i></a>
+                                   <a href="#" target="__blank"> <i class="fa-brands fa-facebook black"></i></a>
+                                   <a href="#" target="__blank"> <i class="fa-brands fa-instagram black"></i></a>
+                                   <a href="#" target="__blank"> <i class="fa-brands fa-linkedin black"></i></a>
                                 </div>
                             </div>
                             <div class="skill-section">
                                 <h5>Skills</h5>
                                 <ul>
-                                    <li><b>Programming Languange :</b> Php, JS</li>
+                                    <li><b>Programming Languange :</b> Php, JS.</li>
+                                    <li><b>Soft Skill :</b> Leadership, Communication, and Team work.</li>
                                 </ul>
                             </div>
                             <hr>
                             <div class="education-section">
                                 <h5>Education</h5>
-                                <p><i>Muhammadiyah Univeristy of Surakarta</i></p>
+                                <ul>
+                                    <li><b>Muhammadiyah University of Surakarta</b> </li>
+                                    <li><b> Senior High School 2 Sragen</b></li>
+                                </ul>
                             </div>
+                            <hr>
+                            <div class="organization-section">
+                                <h5>Organization Experience</h5>
+                                <ul>
+                                    <li> <b> Himpunan Mahasiswa Teknik Informatika </b></li>
+                                    <li> <b> Tapak Suci Putera Muhammadiyah </b></li>
+                                </ul>
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <hr>
                             <div class="languange-section">
                                 <h5>Languange</h5>
                                 <p>Indonesia (Active), Javanese (Native)</p>
@@ -81,29 +113,42 @@
                     </div>
                 </div>
 
-                <div class="col-md-8">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <div class="col-md-8 ">
+                    <ul class="nav nav-tabs  mt-30k ml-0k" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-                              Working
-                          </button>
+                            <button class="nav-link active fw-bold" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                              Profile
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                              Profile</button>
+                            <button class="nav-link fw-bold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                              Organization
+                            </button>
                         </li>
                       </ul>
-                      <div class="tab-content" id="myTabContent">
+
+                      <div class="tab-content ml-30 " id="myTabContent">
                         <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row justify-content-evenly">
                                 <div class="col-md-4">
-                                    <img src="img/square.jpg" alt="" width="200px">
+                                    <img src="img/profil3.JPG" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30">
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/square.jpg" alt="" width="200px">
+                                    <img src="img/cv1.jpg" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30">
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/square.jpg" alt="" width="200px">
+                                    <img src="img/profil1.jpg" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30">
+                                </div>
+                            </div>
+                            <div class="row justify-content-evenly">
+                                <div class="col-md-4">
+                                    <img src="img/profil4.jpg" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30 mt-25">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/profil5.jpg" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30 mt-25">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/profil6.jpg" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30 mt-25">
                                 </div>
                             </div>
                         </div>
@@ -111,17 +156,27 @@
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="row justify-content-evenly">
                                 <div class="col-md-4">
-                                    <img src="img/square.jpg" alt="" width="200px">
+                                    <img src="img/or1.jpg" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30">
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/square.jpg" alt="" width="200px">
+                                    <img src="img/or2.JPG" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30">
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/square.jpg" alt="" width="200px">
+                                    <img src="img/or3.jpg" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30">
+                                </div>
+                            </div>
+                            <div class="row justify-content-evenly">
+                                <div class="col-md-4">
+                                    <img src="img/or4.JPG" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30 mt-25">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/or5.jpg" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30 mt-25">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/or6.jpg" alt="" width="200px" class="br-10 mt-30k ml-50k ml-30 mt-25">
                                 </div>
                             </div>
                         </div>
-
                       </div>
                 </div>
               </div>
